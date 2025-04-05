@@ -1,0 +1,116 @@
+html {
+  background-color: rgba(2, 106, 117, 255);
+  display: flex;
+  justify-content: center;
+  font-family: "Lora", serif;
+  font-size: 62.1%;
+  padding: 1rem, 1.5rem, 1.5rem, 1.5rem;
+}
+
+body {
+  color: #fff;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+}
+/* h3 {
+    padding-left: 550px;
+  } */
+
+input {
+  width: 30rem;
+  padding: 0.5rem;
+  color: black;
+  border: none;
+  border-radius: 10rem;
+  font-size: 2rem;
+  cursor: pointer;
+  display: block;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1rem 3rem;
+  display: block;
+  text-align: center;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: none;
+  cursor: pointer;
+}
+.btn--white {
+  background-color: #fff;
+  color: #777;
+}
+
+.btn--white::after {
+  background-color: #fff;
+}
+
+.signin {
+  height: 750px;
+  width: 340px;
+  display: inline-block;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: black;
+  padding: 1.5rem 2rem;
+  border-radius: 10rem;
+  background-color: rgba(#fff, 0.5);
+  border: none;
+  border-bottom: 1px solid transparent;
+  width: 90%;
+  display: block;
+  transition: all 0.3s;
+}
+
+.form::after {
+  content: "";
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  display: block;
+  transition: all 0.3s;
+}
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+}

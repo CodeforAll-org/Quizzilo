@@ -1,0 +1,97 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  background-color: rgba(2, 106, 117, 255);
+  display: flex;
+  justify-content: center;
+  font-family: "Lora", serif;
+  font-size: 62.1%;
+  padding: 1rem, 1.5rem, 1.5rem, 1.5rem;
+}
+
+body {
+  color: aliceblue;
+}
+
+h2 {
+  text-align: center;
+  font-size: 50px;
+  padding-top: 100px;
+  padding-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  font-size: x-large;
+}
+.title {
+  padding: 5rem 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  grid-template-columns: repeat(2, 1fr); /*Two buttons per row */
+  justify-content: center; /* Center the grid */
+  align-items: baseline;
+  width: fit-content;
+  margin: auto;
+  
+}
+
+.buttons button {
+  background-color: #b2dfdb;
+  color: #004d40;
+  border: none;
+ padding: 6px 10px;
+  width: 200px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px; /* Larger font size */
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+  background-color: #80cbc4;
+}
+.card{
+  position: relative;
+/* background-color: #008073;*/
+ color:white;
+ width: 90vw;
+ height: 65vh;
+ padding: 5vh;
+ border-radius: 10px;
+ text-align: center;
+
+}
+
+.card::before{
+ content: "Q";
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+ font-size: 40vw;
+ font-weight: bold;
+ color:rgba(255,255, 255, 0.2);
+ z-index: -1;
+
+}
+

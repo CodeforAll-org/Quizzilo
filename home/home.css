@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 320px;
+    background: #f8f8f8;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+.container header {
+    background: #178d85;
+    padding: 15px 20px;
+    color: white; /* Ensure text is white */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+}
+ .header .profile {
+    display: flex;
+    align-items: center;
+    top: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px
+    
+}
+.header .profile span {
+    margin-left: 5px;
+    top: 0;
+    font-size: 15px; /* Adjust as needed */
+    font-weight: bold;
+    color: white !important; /* Make sure text is visible */
+    
+    
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: white;
+}
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+}
+.categories {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    background: white;
+    gap: 10px;
+    scrollbar-width: thin; /* Makes the scrollbar thinner */
+    scrollbar-color: #888 #f8f8f8;
+   
+  
+}
+
+.category {
+    text-align: center;
+    flex: 0 0 auto;
+}
+.category img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+}
+.live-classes {
+    padding: 15px;
+    background: white;
+}
+.live-classes h3 {
+    color: maroon;
+    margin-bottom: 10px;
+}
+.class-card {
+    background: #e0f7fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: white;
+    position: fixed;
+    bottom: 0;
+    width: 320px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+.bottom-nav span {
+    font-size: 12px;
+}
